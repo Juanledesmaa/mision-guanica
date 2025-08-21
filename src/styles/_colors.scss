@@ -1,24 +1,29 @@
 // Primary Colors
-$primary-color: #2c3e50;
-$secondary-color: #e74c3c;
+$primary-color: #7e43d0; // Purple accent
+$secondary-color: #7e43d0; // Using same purple for consistency
 
 // Accent Colors
-$accent-color: #3498db;
-$success-color: #27ae60;
-$warning-color: #f39c12;
-$danger-color: #c0392b;
+$accent-color: #7e43d0;
+$success-color: #7e43d0;
+$warning-color: #7e43d0;
+$danger-color: #7e43d0;
 
 // Neutral Colors
-$dark-gray: #34495e;
-$medium-gray: #7f8c8d;
-$light-gray: #ecf0f1;
 $white: #ffffff;
+$off-white: #fdfdfd;
+$light-white: #fefefe;
+$soft-white: #fcfcfc;
+$pale-white: #fafafa;
+$light-gray: #e8e8e8;
+$medium-gray: #666666; // For text contrast
+$dark-gray: #333333; // For text contrast
 $black: #000000;
 
 // Background Colors
 $bg-primary: $white;
-$bg-secondary: $light-gray;
-$bg-dark: $dark-gray;
+$bg-secondary: $pale-white;
+$bg-light: $off-white;
+$bg-dark: $primary-color;
 
 // Text Colors
 $text-primary: $dark-gray;
@@ -26,5 +31,5 @@ $text-secondary: $medium-gray;
 $text-light: $white;
 
 // Border Colors
-$border-color: #dee2e6;
-$border-light: #f1f3f5;
+$border-color: $light-gray;
+$border-light: $pale-white;

@@ -2,18 +2,66 @@
 
 .banner {
   .react-parallax {
-    min-height: 600px;
+    min-height: 550px;
+    background-color: #000;
+    
+    @media (min-width: 1700px) {
+      min-height: 1150px;
+    }
+
+    @media (min-width: 1440px) {
+      min-height: 750px;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 450px;
+    }
+    
+    @media (max-width: 480px) {
+      min-height: 400px;
+    }
+    
+    .react-parallax-bgimage {
+      @media (min-width: 769px) {
+        object-fit: cover !important;
+        object-position: center !important;
+      }
+      
+      @media (max-width: 768px) {
+        object-fit: cover !important;
+        object-position: center !important;
+      }
+      
+      @media (max-width: 480px) {}
+    }
   }
   
   .hero-content {
-    min-height: 600px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     padding: 40px 20px;
-    background: rgba(0, 0, 0, 0.4);
+    
+    @media (min-width: 1700px) {
+      min-height: 1150px;
+    }
+
+    @media (min-width: 1440px) {
+      min-height: 750px;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 450px;
+      padding: 30px 15px;
+    }
+    
+    @media (max-width: 480px) {
+      min-height: 400px;
+      padding: 20px 10px;
+    }
     
     .hero-title {
       font-family: 'BrutalType', sans-serif;
@@ -40,18 +88,29 @@
     }
     
     .cta-button {
-      padding: 15px 40px;
-      font-size: 1.2rem;
-      font-weight: bold;
+      padding: 10px 30px;
+      font-size: 1rem;
+      font-weight: 600;
       color: white;
-      background-color: $secondary-color;
+      background-color: $primary-color;
       border: none;
-      border-radius: 50px;
+      border-radius: 30px;
       cursor: pointer;
       transition: all 0.3s ease;
+      font-family: 'BrutalType', sans-serif;
+      
+      @media (max-width: 768px) {
+        padding: 8px 25px;
+        font-size: 0.95rem;
+      }
+      
+      @media (max-width: 480px) {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
       
       &:hover {
-        background-color: darken($secondary-color, 10%);
+        background-color: darken($primary-color, 10%);
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }

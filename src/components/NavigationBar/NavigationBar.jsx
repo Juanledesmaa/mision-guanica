@@ -14,10 +14,7 @@ const NavigationBar = () => (
         <Row className="w-100 align-items-center">
           <Col xs={6} xl={{ span: 3, offset: 3 }} className="d-flex align-items-center">
             <Navbar.Brand as="div" style={{ cursor: 'pointer' }} onClick={() => window.scrollTo(0, 0)}>
-              <div className="d-flex align-items-center">
-                <div className="logo-placeholder">LOGO</div>
-                <h3 className="m-0"><span className="first-word">Your</span> <span className="last-word">Brand</span></h3>
-              </div>
+              <h1 className="brand-text m-0">SOMOS UNO</h1>
             </Navbar.Brand>
           </Col>
           <Col xs={6} xl={3} className="d-flex align-items-center justify-content-end">

@@ -11,17 +11,10 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="py-4">
-          <Col md={6}>
+          <Col xs={12} className="text-center">
             <p className="copyright">
-              © {currentYear} Your Company. All rights reserved.
+              © {currentYear} Somos uno - Guánica.
             </p>
-          </Col>
-          <Col md={6} className="text-md-end">
-            <ul className="footer-links">
-              <li><button className="link-button" onClick={() => window.scrollTo(0, 0)}>Privacy Policy</button></li>
-              <li><button className="link-button" onClick={() => window.scrollTo(0, 0)}>Terms of Service</button></li>
-              <li><button className="link-button" onClick={() => window.scrollTo(0, 0)}>Contact</button></li>
-            </ul>
           </Col>
         </Row>
       </Container>

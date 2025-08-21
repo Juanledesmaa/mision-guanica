@@ -4,18 +4,21 @@
     "paragraph": "Somos uno"
   },
   "About": {
-    "paragraph": "Misión Guánica es una organización dedicada a preservar y promover el patrimonio cultural y la belleza natural de Guánica, Puerto Rico. Trabajamos unidos como comunidad para proteger nuestros recursos naturales, educar a las futuras generaciones y fortalecer nuestra identidad cultural.",
+    "title": "Acerca de Somos Uno - Guánica",
+    "subtitle": "✨ Bienvenido a Somos Uno – Guánica ✨",
+    "paragraph1": "Nos alegra que estés aquí. En Misión Guánica queremos conocerte, escucharte y caminar contigo. Nuestro propósito es unir esfuerzos como iglesias para llevar el mensaje de esperanza y amor de Jesús a cada rincón de Guánica. Creemos que nadie debería estar solo, y por eso queremos ayudarte a encontrar una comunidad donde puedas crecer, compartir tu fe y descubrir el propósito que Dios tiene para tu vida.",
+    "paragraph2": "Aquí podrás encontrar información sobre las diferentes iglesias en la zona y cómo cada una puede ser un lugar de apoyo, amistad y transformación. Más que un evento, esto es una invitación a ser parte de una familia en la fe.",
     "Why": [
-      "Conservación ambiental",
-      "Educación comunitaria",
-      "Desarrollo sostenible",
-      "Preservación cultural"
+      "Unidad cristiana",
+      "Apoyo espiritual",
+      "Comunidad de fe",
+      "Transformación personal"
     ],
     "Why2": [
-      "Programas juveniles",
-      "Turismo ecológico",
-      "Apoyo comunitario",
-      "Herencia cultural"
+      "Crecimiento espiritual",
+      "Amistad genuina",
+      "Propósito divino",
+      "Familia en la fe"
     ]
   },
   "Gallery": [
@@ -35,24 +38,24 @@
       "smallImage": "https://via.placeholder.com/400x300"
     }
   ],
-  "Services": [
+  "Churches": [
     {
-      "icon": "fa fa-leaf",
-      "title": "Conservación Ambiental",
-      "text": "Protegemos el Bosque Seco de Guánica y sus ecosistemas únicos a través de programas de conservación y restauración ecológica.",
-      "image": "image1"
+      "icon": "fa fa-church",
+      "title": "Iglesia Bet-El Torre Fuerte AD",
+      "text": "Comunidad de fe dedicada a servir y fortalecer espiritualmente a la comunidad de Guánica.",
+      "facebook": "https://www.facebook.com/share/1BT5V8twq2/"
     },
     {
-      "icon": "fa fa-graduation-cap",
-      "title": "Educación y Cultura",
-      "text": "Ofrecemos programas educativos para jóvenes y adultos sobre la historia, cultura y biodiversidad de Guánica.",
-      "image": "image2"
+      "icon": "fa fa-cross",
+      "title": "Iglesia Presbiteriana Guánica",
+      "text": "Iglesia histórica comprometida con el servicio cristiano y el desarrollo espiritual de nuestra comunidad.",
+      "facebook": "https://www.facebook.com/share/16uxqzbNyC/"
     },
     {
-      "icon": "fa fa-users",
-      "title": "Desarrollo Comunitario",
-      "text": "Trabajamos con la comunidad local para crear oportunidades de desarrollo sostenible y fortalecer el tejido social.",
-      "image": "image3"
+      "icon": "fa fa-praying-hands",
+      "title": "Casa de Restauración El Oasis",
+      "text": "Centro de restauración y esperanza, brindando apoyo espiritual y transformación a través de la fe.",
+      "facebook": "https://www.facebook.com/people/Casa-de-Restauraci%C3%B3n-El-Oasis/61574172564892/"
     }
   ],
   "Testimonials": [

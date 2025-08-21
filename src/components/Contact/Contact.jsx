@@ -7,40 +7,31 @@ import Button from 'react-bootstrap/Button';
 import './Contact.scss';
 
 const Contact = () => (
-  <div className="contact">
+  <div className="contact" id="contact">
     <Container>
-      <Row className="py-5">
+      <Row className="py-3">
         <Col xs={12}>
-          <h2 className="section-title">Contact Us</h2>
+          <h2 className="section-title">Contacto</h2>
           <div className="title-underline"></div>
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col md={8} lg={6}>
           <Form className="contact-form">
-            <Row>
-              <Col sm={6}>
-                <Form.Group className="mb-3">
-                  <Form.Control type="text" placeholder="Your Name" />
-                </Form.Group>
-              </Col>
-              <Col sm={6}>
-                <Form.Group className="mb-3">
-                  <Form.Control type="email" placeholder="Your Email" />
-                </Form.Group>
-              </Col>
-            </Row>
-            
             <Form.Group className="mb-3">
-              <Form.Control type="text" placeholder="Subject" />
+              <Form.Control type="text" placeholder="Nombre" />
             </Form.Group>
             
             <Form.Group className="mb-3">
-              <Form.Control as="textarea" rows={5} placeholder="Your Message" />
+              <Form.Control type="text" placeholder="Barrio o pueblo que reside" />
+            </Form.Group>
+            
+            <Form.Group className="mb-3">
+              <Form.Control type="tel" placeholder="Número de teléfono" />
             </Form.Group>
             
             <Button variant="primary" type="submit" className="submit-btn">
-              Send Message
+              Enviar
             </Button>
           </Form>
         </Col>
