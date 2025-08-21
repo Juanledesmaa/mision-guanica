@@ -1,0 +1,117 @@
+{
+  "Header": {
+    "title": "Misión Guánica",
+    "paragraph": "Somos uno"
+  },
+  "About": {
+    "paragraph": "Misión Guánica es una organización dedicada a preservar y promover el patrimonio cultural y la belleza natural de Guánica, Puerto Rico. Trabajamos unidos como comunidad para proteger nuestros recursos naturales, educar a las futuras generaciones y fortalecer nuestra identidad cultural.",
+    "Why": [
+      "Conservación ambiental",
+      "Educación comunitaria",
+      "Desarrollo sostenible",
+      "Preservación cultural"
+    ],
+    "Why2": [
+      "Programas juveniles",
+      "Turismo ecológico",
+      "Apoyo comunitario",
+      "Herencia cultural"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Bosque Seco de Guánica",
+      "largeImage": "https://via.placeholder.com/800x600",
+      "smallImage": "https://via.placeholder.com/400x300"
+    },
+    {
+      "title": "Bahía de Guánica",
+      "largeImage": "https://via.placeholder.com/800x600",
+      "smallImage": "https://via.placeholder.com/400x300"
+    },
+    {
+      "title": "Comunidad Unida",
+      "largeImage": "https://via.placeholder.com/800x600",
+      "smallImage": "https://via.placeholder.com/400x300"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-leaf",
+      "title": "Conservación Ambiental",
+      "text": "Protegemos el Bosque Seco de Guánica y sus ecosistemas únicos a través de programas de conservación y restauración ecológica.",
+      "image": "image1"
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "title": "Educación y Cultura",
+      "text": "Ofrecemos programas educativos para jóvenes y adultos sobre la historia, cultura y biodiversidad de Guánica.",
+      "image": "image2"
+    },
+    {
+      "icon": "fa fa-users",
+      "title": "Desarrollo Comunitario",
+      "text": "Trabajamos con la comunidad local para crear oportunidades de desarrollo sostenible y fortalecer el tejido social.",
+      "image": "image3"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "https://via.placeholder.com/150",
+      "text": "Misión Guánica ha transformado nuestra comunidad, uniendo a todos en la protección de nuestro patrimonio natural y cultural.",
+      "name": "María González"
+    },
+    {
+      "img": "https://via.placeholder.com/150",
+      "text": "Gracias a los programas educativos, nuestros jóvenes están más conectados con sus raíces y el medio ambiente.",
+      "name": "Carlos Rivera"
+    }
+  ],
+  "Team": [
+    {
+      "img": "https://via.placeholder.com/250",
+      "name": "Ana Martínez",
+      "job": "Directora Ejecutiva"
+    },
+    {
+      "img": "https://via.placeholder.com/250",
+      "name": "Roberto Sánchez",
+      "job": "Coordinador de Conservación"
+    },
+    {
+      "img": "https://via.placeholder.com/250",
+      "name": "Carmen Torres",
+      "job": "Directora de Educación"
+    }
+  ],
+  "Contact": {
+    "address": "Guánica, Puerto Rico 00653",
+    "phone": "+1 787 555 0123",
+    "email": "info@misionguanica.org",
+    "facebook": "facebook.com/misionguanica",
+    "twitter": "twitter.com/misionguanica",
+    "youtube": "youtube.com/misionguanica"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-tree",
+      "title": "Bosque Seco",
+      "text": "Protección y conservación del único bosque seco costero de Puerto Rico, hogar de especies únicas."
+    },
+    {
+      "icon": "fa fa-water",
+      "title": "Ecosistemas Marinos",
+      "text": "Preservación de los arrecifes de coral y manglares de la Bahía de Guánica."
+    },
+    {
+      "icon": "fa fa-hands-helping",
+      "title": "Voluntariado",
+      "text": "Oportunidades para participar activamente en proyectos de conservación y desarrollo comunitario."
+    },
+    {
+      "icon": "fa fa-book",
+      "title": "Centro de Recursos",
+      "text": "Biblioteca y centro de investigación sobre la historia y ecología de Guánica."
+    }
+  ]
+}

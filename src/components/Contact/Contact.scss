@@ -1,0 +1,101 @@
+@import '../../styles/imports';
+
+.contact {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  
+  .section-title {
+    font-family: 'BrutalType', sans-serif;
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .title-underline {
+    width: 80px;
+    height: 4px;
+    background-color: $secondary-color;
+    margin: 0 auto 50px;
+  }
+  
+  .contact-info {
+    padding-right: 30px;
+    
+    h4 {
+      color: $primary-color;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #666;
+      
+      .info-icon {
+        color: $secondary-color;
+        margin-right: 15px;
+        font-size: 1.2rem;
+        width: 20px;
+      }
+    }
+    
+    .social-links {
+      margin-top: 30px;
+      
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: $secondary-color;
+        color: white;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background-color: $primary-color;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+  
+  .contact-form {
+    .form-control {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 12px 15px;
+      font-size: 1rem;
+      
+      &:focus {
+        border-color: $secondary-color;
+        box-shadow: 0 0 0 0.2rem rgba($secondary-color, 0.25);
+      }
+    }
+    
+    .submit-btn {
+      background-color: $secondary-color;
+      border: none;
+      padding: 12px 40px;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
