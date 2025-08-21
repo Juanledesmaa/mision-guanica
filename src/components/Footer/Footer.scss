@@ -37,11 +37,16 @@
         margin-left: 0;
       }
       
-      a {
+      a, .link-button {
         color: white;
         text-decoration: none;
         font-size: 0.9rem;
         transition: color 0.3s ease;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        font-family: inherit;
         
         &:hover {
           color: $secondary-color;

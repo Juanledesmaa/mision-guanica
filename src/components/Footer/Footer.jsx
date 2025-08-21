@@ -18,9 +18,9 @@ const Footer = () => {
           </Col>
           <Col md={6} className="text-md-end">
             <ul className="footer-links">
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#terms">Terms of Service</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><button className="link-button" onClick={() => window.scrollTo(0, 0)}>Privacy Policy</button></li>
+              <li><button className="link-button" onClick={() => window.scrollTo(0, 0)}>Terms of Service</button></li>
+              <li><button className="link-button" onClick={() => window.scrollTo(0, 0)}>Contact</button></li>
             </ul>
           </Col>
         </Row>
