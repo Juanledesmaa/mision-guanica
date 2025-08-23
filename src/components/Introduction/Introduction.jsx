@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Introduction.scss';
+import guanicaEscudo from '../../img/guanica-escudo.jpg';
 
 const Introduction = () => (
   <div className="introduction">
@@ -23,6 +24,21 @@ const Introduction = () => (
             puede ser un lugar de apoyo, amistad y transformación. Más que un evento, esto es una 
             invitación a ser parte de una familia en la fe.
           </p>
+          <div className="collaboration-section mt-5">
+            <h3 className="collaboration-subtitle text-center">En colaboración con</h3>
+            <div className="collaboration-image-container text-center mt-3">
+              <img 
+                src={guanicaEscudo} 
+                alt="Escudo de Guánica" 
+                style={{ 
+                  maxWidth: '200px', 
+                  height: 'auto',
+                  display: 'block',
+                  margin: '0 auto'
+                }}
+              />
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>

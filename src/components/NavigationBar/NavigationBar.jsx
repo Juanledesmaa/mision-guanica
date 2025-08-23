@@ -11,18 +11,11 @@ const NavigationBar = () => (
   <div className="navigationBar">
     <Navbar>
       <Container fluid>
-        <Row className="w-100 align-items-center">
-          <Col xs={6} xl={{ span: 3, offset: 3 }} className="d-flex align-items-center">
+        <Row className="w-100 align-items-center justify-content-center">
+          <Col className="d-flex align-items-center justify-content-center">
             <Navbar.Brand as="div" style={{ cursor: 'pointer' }} onClick={() => window.scrollTo(0, 0)}>
-              <h1 className="brand-text m-0">SOMOS UNO</h1>
+              <h1 className="brand-text m-0 text-center">SOMOS UNO - MISIÓN GUÁNICA</h1>
             </Navbar.Brand>
-          </Col>
-          <Col xs={6} xl={3} className="d-flex align-items-center justify-content-end">
-            <Navbar.Toggle />
-            <Navbar.Collapse className="d-flex align-items-center justify-content-end">
-              <FontAwesomeIcon icon={faPhone} />
-              <h3 className="icon-text">123-456-7890</h3>
-            </Navbar.Collapse>
           </Col>
         </Row>
       </Container>

@@ -45,7 +45,7 @@ const Churches = ({ data = [] }) => {
           <Container>
             <Row className="py-5">
               <Col xs={12}>
-                <h2 className="section-title">Nuestras Iglesias</h2>
+                <h2 className="section-title">Iglesias en la zona</h2>
                 <div className="title-underline"></div>
               </Col>
             </Row>

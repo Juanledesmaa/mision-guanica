@@ -97,6 +97,29 @@
         background-color: darken($secondary-color, 10%);
         transform: translateY(-2px);
       }
+      
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+    
+    .message-box {
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      
+      &.success {
+        background-color: rgba(40, 167, 69, 0.1);
+        color: #28a745;
+        border: 1px solid rgba(40, 167, 69, 0.2);
+      }
+      
+      &.error {
+        background-color: rgba(220, 53, 69, 0.1);
+        color: #dc3545;
+        border: 1px solid rgba(220, 53, 69, 0.2);
+      }
     }
   }
 }
