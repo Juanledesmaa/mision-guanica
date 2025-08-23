@@ -1,12 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import emailjs from '@emailjs/browser';
 import './Contact.scss';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [stateMessage, setStateMessage] = useState(null);
+
+  const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    emailjs
+      .sendForm(
+        "service_r7k2sbd",
+        "template_0j3hrk8",
+        e.target,
+        "4a_udFTfxuyCqdANG"
+      )
+      .then(
+        (result) => {
+          setStateMessage('¡Gracias por tu información! Nos pondremos en contacto contigo pronto para ayudarte a conectar con una comunidad de fe.');
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 10000);
+        },
+        (error) => {
+          setStateMessage('Algo salió mal, por favor inténtalo de nuevo más tarde.');
+          setIsSubmitting(false);
+          setTimeout(() => {
+            setStateMessage(null);
+          }, 10000);
+        }
+      );
+    
+    // Clear the form after sending
+    e.target.reset();
+  };
+
   return (
   <div className="contact" id="contact">
     <Container>
@@ -21,7 +58,7 @@ const Contact = () => {
           <p className="contact-intro-text text-center mb-4">
             Queremos ayudarte, puedes dejarnos tus datos en este formulario para ayudarte a conectar con una comunidad de la fe
           </p>
-          <Form className="contact-form" action="https://nocodeform.io/f/68a90880a7999fa89b1f9230" method="POST">
+          <Form className="contact-form" onSubmit={sendEmail}>
             <Form.Group className="mb-3">
               <Form.Control 
                 type="text" 
@@ -53,9 +90,16 @@ const Contact = () => {
               variant="primary" 
               type="submit" 
               className="submit-btn"
+              disabled={isSubmitting}
             >
-              Enviar
+              {isSubmitting ? 'Enviando...' : 'Enviar'}
             </Button>
+            
+            {stateMessage && (
+              <div className={`message-box mt-3 ${stateMessage.includes('Gracias') ? 'success' : 'error'}`}>
+                <p className="mb-0">{stateMessage}</p>
+              </div>
+            )}
           </Form>
         </Col>
       </Row>
