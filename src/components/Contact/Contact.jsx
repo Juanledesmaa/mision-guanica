@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,40 +7,6 @@ import Button from 'react-bootstrap/Button';
 import './Contact.scss';
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [stateMessage, setStateMessage] = useState(null);
-
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    const formData = new FormData(e.target);
-    
-    try {
-      const response = await fetch('https://nocodeform.io/f/68a90880a7999fa89b1f9230', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        setStateMessage('¡Gracias por tu información! Nos pondremos en contacto contigo pronto para ayudarte a conectar con una comunidad de fe.');
-        setIsSubmitting(false);
-        e.target.reset();
-        setTimeout(() => {
-          setStateMessage(null);
-        }, 10000);
-      } else {
-        throw new Error('Form submission failed');
-      }
-    } catch (error) {
-      setStateMessage('Algo salió mal, por favor inténtalo de nuevo más tarde.');
-      setIsSubmitting(false);
-      setTimeout(() => {
-        setStateMessage(null);
-      }, 10000);
-    }
-  };
-
   return (
   <div className="contact" id="contact">
     <Container>
@@ -55,7 +21,7 @@ const Contact = () => {
           <p className="contact-intro-text text-center mb-4">
             Queremos ayudarte, puedes dejarnos tus datos en este formulario para ayudarte a conectar con una comunidad de la fe
           </p>
-          <Form className="contact-form" onSubmit={sendEmail}>
+          <Form className="contact-form" action="https://nocodeform.io/f/68a90880a7999fa89b1f9230" method="POST">
             <Form.Group className="mb-3">
               <Form.Control 
                 type="text" 
@@ -87,16 +53,9 @@ const Contact = () => {
               variant="primary" 
               type="submit" 
               className="submit-btn"
-              disabled={isSubmitting}
             >
-              {isSubmitting ? 'Enviando...' : 'Enviar'}
+              Enviar
             </Button>
-            
-            {stateMessage && (
-              <div className={`message-box mt-3 ${stateMessage.includes('Gracias') ? 'success' : 'error'}`}>
-                <p className="mb-0">{stateMessage}</p>
-              </div>
-            )}
           </Form>
         </Col>
       </Row>
